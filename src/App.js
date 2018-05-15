@@ -91,6 +91,24 @@ class App extends Component {
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-10 offset-1">
+            <div class="time-line">
+              <div class="time-line-content">
+              content
+              </div>
+              <div class="time-line-year">
+              ^
+              <br/>
+              2015
+              </div>
+              <div class="swiper-button-next">
+              </div>
+              <div class="swiper-button-prev">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="footer">
         Alvaro Martinez 2018 - Copyrigth
