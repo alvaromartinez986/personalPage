@@ -175,9 +175,21 @@ body{
   transform: rotate(90deg);
 }
 
-.swiper-pagination-bullet-active {
+.swiper-pagination-bullet{
   margin: 10px 0 0 0;
   color: #d4a024;
+}
+
+.swiper-pagination-bullet::after{
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  background-color: #d4a024;
+  position: relative;
+  display: block;
+  content: "";
+  left: -39px;
+  top: -14px;
 }
 
 .swiper-button-prev {
