@@ -15,7 +15,7 @@ body{
 
 .main-nav  {
   background-color: #2b2b2b;
-  color: white
+  color: white;
 }
 
 .main-nav .navbar-brand{
@@ -82,6 +82,16 @@ body{
   background-color: white
 }
 
+.wrapped img{
+  height: 300px;
+  width: 300px;
+  border-radius: 200px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -150px
+}
+
 .portafolio-card{
   margin: 50px 0 0 0;
   padding: 20px 10px 20px 10px;
@@ -106,16 +116,6 @@ body{
   text-align: center;
 }
 
-.wrapped img{
-  height: 300px;
-  width: 300px;
-  border-radius: 200px;
-  position: absolute;
-  top: 100px;
-  left: 50%;
-  margin-left: -100px
-}
-
 .time-line {
   height: 450px;
   width: 100%;
@@ -136,6 +136,8 @@ body{
   padding: 55px 0 55px 35px;
   flex-direction: column;
   position: absolute;
+  transform: translate3d(0, 0, 0);
+  transition: .4s ease 1.6s;
 }
 
 .time-line-content{
@@ -208,4 +210,39 @@ body{
 
 .swiper-button-next:hover { 
   transform: rotate(90deg) translateX(3px); 
+}
+
+/** Animations **/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.slow {
+  -webkit-animation-duration: 2.0s;
+  animation-duration: 2.0s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+  }
+  to   { 
+    opacity: 1; 
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
 }
