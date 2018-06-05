@@ -8,10 +8,10 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div class="presentation animated fadeIn slow">
+      <div className="presentation animated fadeIn slow">
         <NavBar />
         <Body />
-      <div class="footer">
+      <div className="footer">
         Alvaro Martinez 2018 - Copyrigth
       </div>
     </div>
